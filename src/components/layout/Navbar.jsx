@@ -30,10 +30,10 @@ const Navbar = () => {
                 <Link to="/account" className="icon-btn" title="Account">
                     <FiUser />
                 </Link>
-                <button className="cart-btn" onClick={() => setIsCartOpen(true)}>
+                <Link to="/cart" className="cart-btn">
                     <FiShoppingBag />
                     {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-                </button>
+                </Link>
             </div>
         </nav>
     );
