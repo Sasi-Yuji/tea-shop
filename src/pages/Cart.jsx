@@ -58,7 +58,7 @@ const Cart = () => {
                         <span>Total</span>
                         <span>${cartTotal.toFixed(2)}</span>
                     </div>
-                    <button className="btn btn-primary btn-block">Proceed to Checkout</button>
+                    <Link to="/checkout" className="btn btn-primary btn-block">Proceed to Checkout</Link>
                     <button className="btn btn-secondary btn-block" onClick={clearCart} style={{ marginTop: '1rem' }}>
                         Clear Cart
                     </button>
